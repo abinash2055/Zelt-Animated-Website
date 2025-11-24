@@ -321,3 +321,110 @@ canvas {
     height: 70%;
     width: 70%;
 }
+
+
+/* ////////////////////////////////////////// */
+/* Mobile & tablet responsive media queries */
+
+/* Tablets (≤768px) */
+@media screen and (max-width: 768px) {
+
+    /* Stack left/right sections vertically */
+    #center-page5,
+    #page6, #page7, #page8 {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 20px 0 !important;
+    }
+
+    /* Left and right sections full width */
+    #left-page5, #right-page5,
+    .left-page6, .right-page6,
+    .left-page7, .right-page7,
+    .left-page8, .right-page8 {
+        width: 100% !important;
+        padding-left: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Images & SVGs */
+    #left-page5>svg,
+    .right-page8>img {
+        width: 90% !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 20px auto !important;
+    }
+
+    /* Videos */
+    .right-page6>video,
+    .right-page7>video {
+        width: 90% !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 20px auto !important;
+    }
+
+    /* Text adjustments */
+    h1 {
+        font-size: 5.5vw !important;
+    }
+    h4 {
+        font-size: 3.5vw !important;
+        width: 90% !important;
+        margin: 10px auto 0 auto !important;
+    }
+
+    /* Buttons */
+    #right-page5>button {
+        padding: 12px 25px !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+}
+
+/* Small phones (≤480px) */
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 7vw !important;
+    }
+    h4 {
+        font-size: 4vw !important;
+    }
+
+    #center-page5 {
+        width: 95% !important;
+        padding: 10px 0 !important;
+    }
+
+    /* Images & SVGs */
+    #left-page5>svg,
+    .right-page8>img {
+        width: 95% !important;
+        height: auto !important;
+    }
+
+    /* Videos */
+    .right-page6>video,
+    .right-page7>video {
+        width: 95% !important;
+        height: auto !important;
+    }
+
+    /* Navbar adjustments */
+    #nav {
+        width: 90% !important;
+        height: 8vh !important;
+        padding: 0 10px !important;
+    }
+
+    #nav>img {
+        width: 15% !important;
+    }
+
+    #nav>button {
+        padding: 8px 15px !important;
+        font-size: 14px !important;
+    }
+}
